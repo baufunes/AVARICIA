@@ -1,0 +1,37 @@
+date,home_team,away_team,home_score,away_score,tournament
+2022-11-22,Argentina,Saudi Arabia,1,2,FIFA World Cup
+2022-11-26,Argentina,Mexico,2,0,FIFA World Cup
+2022-11-30,Argentina,Poland,2,0,FIFA World Cup
+2022-12-03,Argentina,Australia,2,1,FIFA World Cup
+2022-12-09,Argentina,Netherlands,2,2,FIFA World Cup
+2022-12-13,Argentina,Croatia,3,0,FIFA World Cup
+2022-12-18,Argentina,France,3,3,FIFA World Cup
+2022-11-23,France,Australia,4,1,FIFA World Cup
+2022-11-26,France,Denmark,2,1,FIFA World Cup
+2022-11-30,France,Tunisia,0,1,FIFA World Cup
+2022-12-04,France,Poland,3,1,FIFA World Cup
+2022-12-10,France,England,2,1,FIFA World Cup
+2022-12-14,France,Morocco,2,0,FIFA World Cup
+2022-11-27,Morocco,Belgium,2,0,FIFA World Cup
+2022-11-23,Morocco,Croatia,0,0,FIFA World Cup
+2022-12-01,Morocco,Canada,2,1,FIFA World Cup
+2022-12-06,Morocco,Spain,0,0,FIFA World Cup
+2022-12-10,Morocco,Portugal,1,0,FIFA World Cup
+2022-11-23,Spain,Costa Rica,7,0,FIFA World Cup
+2022-11-27,Spain,Germany,1,1,FIFA World Cup
+2022-12-01,Spain,Japan,1,2,FIFA World Cup
+2022-11-24,Belgium,Canada,1,0,FIFA World Cup
+2022-11-27,Belgium,Morocco,0,2,FIFA World Cup
+2022-12-01,Belgium,Croatia,0,0,FIFA World Cup
+2022-11-25,Switzerland,Cameroon,1,0,FIFA World Cup
+2022-11-28,Switzerland,Brazil,1,1,FIFA World Cup
+2022-12-02,Switzerland,Serbia,3,2,FIFA World Cup
+2022-12-06,Switzerland,Portugal,1,6,FIFA World Cup
+2022-11-25,England,Iran,6,2,FIFA World Cup
+2022-11-25,England,United States,0,0,FIFA World Cup
+2022-11-29,England,Wales,3,0,FIFA World Cup
+2022-12-04,England,Senegal,3,0,FIFA World Cup
+2022-11-26,Norway,Sweden,2,1,friendly
+2022-06-05,Norway,Slovenia,3,1,friendly
+2023-06-16,Norway,Scotland,2,2,friendly
+2023-11-19,Norway,Georgia,3,0,friendly

@@ -1,0 +1,4 @@
+{
+  "_comentario": "Cargá acá árbitros que ya sepas por otra fuente (prensa, FIFA) pero que la API todavía no tenga actualizados. Formato: 'Equipo A|Equipo B': 'Nombre del árbitro'. El orden de los equipos no importa, el programa los busca en cualquier orden.",
+  "Argentina|Switzerland": "João Pinheiro"
+}

@@ -1,0 +1,49 @@
+name: Actualizar predicciones
+
+# Cuándo se corre este robot:
+#   - schedule: automáticamente, según el horario de abajo (cron)
+#   - workflow_dispatch: te deja además apretar un botón "Run workflow"
+#     manualmente desde la pestaña Actions de GitHub, para forzar una
+#     actualización sin esperar al horario
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # cada 6 horas (horario UTC, no de Argentina)
+  workflow_dispatch:
+
+# Le da permiso al robot para escribir de vuelta en el repo (necesita
+# poder hacer commit del JSON actualizado)
+permissions:
+  contents: write
+
+jobs:
+  update-predictions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bajar el código del repo
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Correr el pipeline y generar el JSON
+        env:
+          # Estas dos variables se completan solas desde los "Secrets" que
+          # configures en GitHub (Settings > Secrets and variables >
+          # Actions) — nunca desde acá, así tus keys no quedan expuestas
+          # en el código.
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python export_json.py
+
+      - name: Subir los cambios al repo (si hay novedades)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/predictions.json data/api_football_cache.json
+          git diff --quiet --cached || git commit -m "Actualizar predicciones automáticamente"
+          git push
