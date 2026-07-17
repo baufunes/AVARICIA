@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-07-17T21:44:22.409378+00:00",
+  "round_name": "FINAL",
+  "matches": [
+    {
+      "team_a": "Spain",
+      "team_b": "Argentina",
+      "most_likely_score": "1-1",
+      "prob_win_a": 0.47815,
+      "prob_draw": 0.24655,
+      "prob_win_b": 0.2753,
+      "prob_advance_a": 0.6346141084345345,
+      "prob_advance_b": 0.3653858915654655,
+      "corners": {
+        "expected_corners_a": 5.0,
+        "expected_corners_b": 5.0,
+        "most_likely_a": 5,
+        "most_likely_b": 5,
+        "prob_over_9_5_total": 0.5405
+      },
+      "cards": {
+        "expected_total_cards": 4.4,
+        "expected_cards_a": 2.2,
+        "expected_cards_b": 2.2,
+        "most_likely_total": 4,
+        "prob_over_4_5_total": 0.4508,
+        "referee_strictness_vs_avg": 1.0
+      },
+      "referee": null,
+      "warnings": [
+        "Todavía no está confirmado el árbitro del partido; uso el promedio del torneo."
+      ]
+    }
+  ],
+  "third_place": {
+    "team_a": "France",
+    "team_b": "England",
+    "most_likely_score": "1-1",
+    "prob_win_a": 0.3084,
+    "prob_draw": 0.2256,
+    "prob_win_b": 0.466,
+    "prob_advance_a": 0.3982438016528926,
+    "prob_advance_b": 0.6017561983471074,
+    "corners": null,
+    "cards": null,
+    "referee": null,
+    "warnings": []
+  },
+  "champions": []
+}

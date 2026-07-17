@@ -1,0 +1,243 @@
+{
+  "leagues?{\"name\": \"World Cup\"}": {
+    "get": "leagues",
+    "parameters": {
+      "name": "World Cup"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": [
+      {
+        "league": {
+          "id": 1,
+          "name": "World Cup",
+          "type": "Cup",
+          "logo": "https://media.api-sports.io/football/leagues/1.png"
+        },
+        "country": {
+          "name": "World",
+          "code": null,
+          "flag": null
+        },
+        "seasons": [
+          {
+            "year": 2010,
+            "start": "2010-06-11",
+            "end": "2010-07-11",
+            "current": false,
+            "coverage": {
+              "fixtures": {
+                "events": true,
+                "lineups": true,
+                "statistics_fixtures": false,
+                "statistics_players": false
+              },
+              "standings": false,
+              "players": true,
+              "top_scorers": true,
+              "top_assists": true,
+              "top_cards": true,
+              "injuries": false,
+              "predictions": true,
+              "odds": false
+            }
+          },
+          {
+            "year": 2014,
+            "start": "2014-06-12",
+            "end": "2014-07-13",
+            "current": false,
+            "coverage": {
+              "fixtures": {
+                "events": true,
+                "lineups": true,
+                "statistics_fixtures": false,
+                "statistics_players": false
+              },
+              "standings": false,
+              "players": true,
+              "top_scorers": true,
+              "top_assists": true,
+              "top_cards": true,
+              "injuries": false,
+              "predictions": true,
+              "odds": false
+            }
+          },
+          {
+            "year": 2018,
+            "start": "2018-06-14",
+            "end": "2018-07-15",
+            "current": false,
+            "coverage": {
+              "fixtures": {
+                "events": true,
+                "lineups": true,
+                "statistics_fixtures": true,
+                "statistics_players": true
+              },
+              "standings": true,
+              "players": true,
+              "top_scorers": true,
+              "top_assists": true,
+              "top_cards": true,
+              "injuries": false,
+              "predictions": true,
+              "odds": false
+            }
+          },
+          {
+            "year": 2022,
+            "start": "2022-11-20",
+            "end": "2022-12-18",
+            "current": false,
+            "coverage": {
+              "fixtures": {
+                "events": true,
+                "lineups": true,
+                "statistics_fixtures": true,
+                "statistics_players": true
+              },
+              "standings": true,
+              "players": true,
+              "top_scorers": true,
+              "top_assists": true,
+              "top_cards": true,
+              "injuries": false,
+              "predictions": true,
+              "odds": false
+            }
+          },
+          {
+            "year": 2026,
+            "start": "2026-06-11",
+            "end": "2026-07-19",
+            "current": true,
+            "coverage": {
+              "fixtures": {
+                "events": true,
+                "lineups": true,
+                "statistics_fixtures": true,
+                "statistics_players": true
+              },
+              "standings": true,
+              "players": true,
+              "top_scorers": true,
+              "top_assists": true,
+              "top_cards": true,
+              "injuries": true,
+              "predictions": true,
+              "odds": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "teams?{\"name\": \"Spain\"}": {
+    "get": "teams",
+    "parameters": {
+      "name": "Spain"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": [
+      {
+        "team": {
+          "id": 9,
+          "name": "Spain",
+          "code": "ESP",
+          "country": "Spain",
+          "founded": 1913,
+          "national": true,
+          "logo": "https://media.api-sports.io/football/teams/9.png"
+        },
+        "venue": {
+          "id": 3989,
+          "name": "Bernab\u00e9u",
+          "address": "Avenida de Concha Espina 1",
+          "city": "Madrid",
+          "capacity": 83186,
+          "surface": "grass",
+          "image": "https://media.api-sports.io/football/venues/3989.png"
+        }
+      }
+    ]
+  },
+  "fixtures?{\"league\": 1, \"season\": 2026, \"team\": 9}": {
+    "get": "fixtures",
+    "parameters": {
+      "team": "9",
+      "league": "1",
+      "season": "2026"
+    },
+    "errors": {
+      "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+    },
+    "results": 0,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": []
+  },
+  "teams?{\"name\": \"Argentina\"}": {
+    "get": "teams",
+    "parameters": {
+      "name": "Argentina"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": [
+      {
+        "team": {
+          "id": 26,
+          "name": "Argentina",
+          "code": "ARG",
+          "country": "Argentina",
+          "founded": 1893,
+          "national": true,
+          "logo": "https://media.api-sports.io/football/teams/26.png"
+        },
+        "venue": {
+          "id": 46,
+          "name": "Estadio M\u00e2s Monumental",
+          "address": "Av. Pres. Figueroa Alcorta 7597",
+          "city": "Buenos Aires",
+          "capacity": 85018,
+          "surface": "grass",
+          "image": "https://media.api-sports.io/football/venues/46.png"
+        }
+      }
+    ]
+  },
+  "fixtures?{\"league\": 1, \"season\": 2026, \"team\": 26}": {
+    "get": "fixtures",
+    "parameters": {
+      "team": "26",
+      "league": "1",
+      "season": "2026"
+    },
+    "errors": {
+      "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+    },
+    "results": 0,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": []
+  }
+}
