@@ -1,33 +1,50 @@
-name: Deploy GitHub Pages
+name: Actualizar predicciones
 
-# Se dispara solo cada vez que cambia algo dentro de docs/ (por ejemplo,
-# cuando update_predictions.yml sube un JSON nuevo), o manualmente.
 on:
-  push:
-    branches: [main]
-    paths:
-      - "docs/**"
+  schedule:
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
-# Evita que se pisen dos despliegues corriendo al mismo tiempo
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  update-predictions:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
-      - name: Bajar el código del repo
+      - name: Bajar el codigo del repo
         uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Correr el pipeline y generar el JSON
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python export_json.py
+
+      - name: Guardar los cambios en el repo (si hay novedades)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/predictions.json data/api_football_cache.json
+          git diff --quiet --cached || git commit -m "Actualizar predicciones automáticamente"
+          git push
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
