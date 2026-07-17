@@ -1,0 +1,5 @@
+{
+  "_comentario": "Si la API todavía no actualizó qué partidos quedan (por ejemplo, la Final recién definida), cargá acá la ronda actual a mano. Dejá 'round_name' en null para que el programa siga usando la detección automática de la API.",
+  "round_name": null,
+  "matches": []
+}
