@@ -124,6 +124,16 @@ def find_team_id(team_name: str) -> int:
     responses = data.get("response", [])
     if not responses:
         raise RuntimeError(f"No encontré el equipo '{team_name}' en API-Football.")
+
+    # La búsqueda por nombre puede devolver varios resultados (por ejemplo,
+    # un club que se llama parecido a la selección). Preferimos el que esté
+    # marcado explícitamente como selección nacional.
+    for item in responses:
+        if item.get("team", {}).get("national"):
+            return item["team"]["id"]
+
+    # Si ninguno viene marcado como nacional (poco común), nos quedamos con
+    # el primero como antes.
     return responses[0]["team"]["id"]
 
 

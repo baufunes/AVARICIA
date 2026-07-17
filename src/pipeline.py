@@ -17,6 +17,7 @@ from src.data_fetcher import (
     fetch_finished_world_cup_matches,
     detect_current_round,
     fetch_third_place_match,
+    get_manual_round,
 )
 from src.elo import compute_elo_ratings
 from src.poisson_model import compute_team_strengths
@@ -57,6 +58,11 @@ def _build_dataset(progress_callback=None) -> pd.DataFrame:
 
 
 def _get_current_bracket(progress_callback=None):
+    manual_round_name, manual_matches = get_manual_round()
+    if manual_round_name:
+        _notify(progress_callback, f"📌 Usando ronda cargada a mano: {manual_round_name}")
+        return manual_round_name, manual_matches
+
     try:
         round_name, matches = detect_current_round()
         if matches:

@@ -38,6 +38,11 @@ def predict_corners_and_cards(team_a: str, team_b: str) -> dict:
     for team in (team_a, team_b):
         try:
             fixtures = api_football.fetch_team_world_cup_fixtures(team, league_id)
+            if not fixtures:
+                warnings.append(
+                    f"No encontré partidos jugados de {team} en API-Football "
+                    f"(uso el promedio general como respaldo)."
+                )
             stats_list = [api_football.fetch_fixture_statistics(f["fixture_id"]) for f in fixtures]
             team_profiles[team] = {
                 "corners": build_team_corner_profile(stats_list, team),

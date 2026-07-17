@@ -19,6 +19,33 @@ import requests
 from src.config import FOOTBALL_DATA_API_KEY, FOOTBALL_DATA_BASE_URL, WORLD_CUP_CODE
 from src.paths import path as resolve_path
 
+MANUAL_ROUND_PATH = resolve_path("data", "manual_round.json")
+
+
+def get_manual_round():
+    """
+    Revisa data/manual_round.json por si el usuario cargó a mano la ronda
+    actual (útil cuando la API todavía no actualizó qué partidos quedan,
+    como pasa a veces con la Final recién definida). Devuelve
+    (round_name, matches) o (None, None) si no hay override cargado.
+    """
+    import json
+    import os
+
+    if not os.path.exists(MANUAL_ROUND_PATH):
+        return None, None
+
+    with open(MANUAL_ROUND_PATH, "r") as f:
+        data = json.load(f)
+
+    round_name = data.get("round_name")
+    matches = data.get("matches", [])
+
+    if not round_name or not matches:
+        return None, None
+
+    return round_name, [tuple(m) for m in matches]
+
 
 def load_historical_data(csv_path: str = None) -> pd.DataFrame:
     """
