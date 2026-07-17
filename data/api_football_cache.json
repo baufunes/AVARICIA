@@ -239,5 +239,327 @@
       "total": 1
     },
     "response": []
+  },
+  "teams?{\"name\": \"France\"}": {
+    "get": "teams",
+    "parameters": {
+      "name": "France"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": [
+      {
+        "team": {
+          "id": 2,
+          "name": "France",
+          "code": "FRA",
+          "country": "France",
+          "founded": 1919,
+          "national": true,
+          "logo": "https://media.api-sports.io/football/teams/2.png"
+        },
+        "venue": {
+          "id": 666,
+          "name": "Groupama Stadium",
+          "address": "Stade de France",
+          "city": "Saint-Denis",
+          "capacity": 80698,
+          "surface": "grass",
+          "image": "https://media.api-sports.io/football/venues/666.png"
+        }
+      }
+    ]
+  },
+  "fixtures?{\"league\": 1, \"season\": 2026, \"team\": 2}": {
+    "get": "fixtures",
+    "parameters": {
+      "team": "2",
+      "league": "1",
+      "season": "2026"
+    },
+    "errors": {
+      "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+    },
+    "results": 0,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": []
+  },
+  "teams?{\"name\": \"Morocco\"}": {
+    "get": "teams",
+    "parameters": {
+      "name": "Morocco"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": [
+      {
+        "team": {
+          "id": 31,
+          "name": "Morocco",
+          "code": "MAR",
+          "country": "Morocco",
+          "founded": 1955,
+          "national": true,
+          "logo": "https://media.api-sports.io/football/teams/31.png"
+        },
+        "venue": {
+          "id": 2260,
+          "name": "Stade Mohammed V",
+          "address": "Rue Ali Abderrazak",
+          "city": "Casablanca",
+          "capacity": 67000,
+          "surface": "artificial turf",
+          "image": "https://media.api-sports.io/football/venues/2260.png"
+        }
+      }
+    ]
+  },
+  "fixtures?{\"league\": 1, \"season\": 2026, \"team\": 31}": {
+    "get": "fixtures",
+    "parameters": {
+      "team": "31",
+      "league": "1",
+      "season": "2026"
+    },
+    "errors": {
+      "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+    },
+    "results": 0,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": []
+  },
+  "teams?{\"name\": \"Belgium\"}": {
+    "get": "teams",
+    "parameters": {
+      "name": "Belgium"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": [
+      {
+        "team": {
+          "id": 1,
+          "name": "Belgium",
+          "code": "BEL",
+          "country": "Belgium",
+          "founded": 1895,
+          "national": true,
+          "logo": "https://media.api-sports.io/football/teams/1.png"
+        },
+        "venue": {
+          "id": 795,
+          "name": "King Baudouin Stadium",
+          "address": "Avenue de Marathon 135",
+          "city": "Brussels",
+          "capacity": 50093,
+          "surface": "grass",
+          "image": "https://media.api-sports.io/football/venues/795.png"
+        }
+      }
+    ]
+  },
+  "fixtures?{\"league\": 1, \"season\": 2026, \"team\": 1}": {
+    "get": "fixtures",
+    "parameters": {
+      "team": "1",
+      "league": "1",
+      "season": "2026"
+    },
+    "errors": {
+      "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+    },
+    "results": 0,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": []
+  },
+  "teams?{\"name\": \"Norway\"}": {
+    "get": "teams",
+    "parameters": {
+      "name": "Norway"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": [
+      {
+        "team": {
+          "id": 1090,
+          "name": "Norway",
+          "code": "NOR",
+          "country": "Norway",
+          "founded": 1902,
+          "national": true,
+          "logo": "https://media.api-sports.io/football/teams/1090.png"
+        },
+        "venue": {
+          "id": 11603,
+          "name": "Ullevaal Stadion",
+          "address": "Sognsveien 75",
+          "city": "Oslo",
+          "capacity": 27182,
+          "surface": "grass",
+          "image": "https://media.api-sports.io/football/venues/11603.png"
+        }
+      }
+    ]
+  },
+  "fixtures?{\"league\": 1, \"season\": 2026, \"team\": 1090}": {
+    "get": "fixtures",
+    "parameters": {
+      "team": "1090",
+      "league": "1",
+      "season": "2026"
+    },
+    "errors": {
+      "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+    },
+    "results": 0,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": []
+  },
+  "teams?{\"name\": \"England\"}": {
+    "get": "teams",
+    "parameters": {
+      "name": "England"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": [
+      {
+        "team": {
+          "id": 10,
+          "name": "England",
+          "code": "ENG",
+          "country": "England",
+          "founded": 1863,
+          "national": true,
+          "logo": "https://media.api-sports.io/football/teams/10.png"
+        },
+        "venue": {
+          "id": 566,
+          "name": "Wembley Stadium",
+          "address": "Wembley, London HA9 0WS",
+          "city": "London",
+          "capacity": 90000,
+          "surface": "grass",
+          "image": "https://media.api-sports.io/football/venues/566.png"
+        }
+      }
+    ]
+  },
+  "fixtures?{\"league\": 1, \"season\": 2026, \"team\": 10}": {
+    "get": "fixtures",
+    "parameters": {
+      "team": "10",
+      "league": "1",
+      "season": "2026"
+    },
+    "errors": {
+      "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+    },
+    "results": 0,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": []
+  },
+  "teams?{\"name\": \"Switzerland\"}": {
+    "get": "teams",
+    "parameters": {
+      "name": "Switzerland"
+    },
+    "errors": [],
+    "results": 1,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": [
+      {
+        "team": {
+          "id": 15,
+          "name": "Switzerland",
+          "code": "SUI",
+          "country": "Switzerland",
+          "founded": 1895,
+          "national": true,
+          "logo": "https://media.api-sports.io/football/teams/15.png"
+        },
+        "venue": {
+          "id": 1543,
+          "name": "St. Jakob-Park",
+          "address": "St. Jakobs-Strasse 395",
+          "city": "Basel",
+          "capacity": 38512,
+          "surface": "grass",
+          "image": "https://media.api-sports.io/football/venues/1543.png"
+        }
+      }
+    ]
+  },
+  "fixtures?{\"league\": 1, \"season\": 2026, \"team\": 15}": {
+    "get": "fixtures",
+    "parameters": {
+      "team": "15",
+      "league": "1",
+      "season": "2026"
+    },
+    "errors": {
+      "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+    },
+    "results": 0,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": []
+  },
+  "fixtures?{\"league\": 1, \"season\": 2026}": {
+    "get": "fixtures",
+    "parameters": {
+      "league": "1",
+      "season": "2026"
+    },
+    "errors": {
+      "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+    },
+    "results": 0,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": []
   }
 }
