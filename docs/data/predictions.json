@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-07-19T02:27:04.688245+00:00",
+  "generated_at": "2026-07-19T07:54:14.840012+00:00",
   "round_name": "FINAL",
   "matches": [
     {
       "team_a": "Spain",
       "team_b": "Argentina",
       "most_likely_score": "1-1",
-      "prob_win_a": 0.47625,
-      "prob_draw": 0.24745,
-      "prob_win_b": 0.2763,
-      "prob_advance_a": 0.6328483157265299,
-      "prob_advance_b": 0.3671516842734701,
+      "prob_win_a": 0.47585,
+      "prob_draw": 0.24535,
+      "prob_win_b": 0.2788,
+      "prob_advance_a": 0.6305572119525609,
+      "prob_advance_b": 0.36944278804743913,
       "corners": {
         "expected_corners_a": 5.0,
         "expected_corners_b": 5.0,
         "most_likely_a": 5,
         "most_likely_b": 5,
-        "prob_over_9_5_total": 0.54015
+        "prob_over_9_5_total": 0.5441
       },
       "cards": {
         "expected_total_cards": 4.4,
         "expected_cards_a": 2.2,
         "expected_cards_b": 2.2,
         "most_likely_total": 4,
-        "prob_over_4_5_total": 0.4474,
+        "prob_over_4_5_total": 0.44915,
         "referee_strictness_vs_avg": 1.0
       },
       "referee": null,
