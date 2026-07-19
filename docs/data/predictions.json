@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-07-18T19:00:07.562740+00:00",
+  "generated_at": "2026-07-19T01:17:41.694348+00:00",
   "round_name": "FINAL",
   "matches": [
     {
       "team_a": "Spain",
       "team_b": "Argentina",
       "most_likely_score": "1-1",
-      "prob_win_a": 0.4808,
-      "prob_draw": 0.24835,
-      "prob_win_b": 0.27085,
-      "prob_advance_a": 0.6396594159515732,
-      "prob_advance_b": 0.36034058404842684,
+      "prob_win_a": 0.4795,
+      "prob_draw": 0.2445,
+      "prob_win_b": 0.276,
+      "prob_advance_a": 0.6346790205162144,
+      "prob_advance_b": 0.3653209794837856,
       "corners": {
         "expected_corners_a": 5.0,
         "expected_corners_b": 5.0,
         "most_likely_a": 5,
         "most_likely_b": 5,
-        "prob_over_9_5_total": 0.53925
+        "prob_over_9_5_total": 0.5439
       },
       "cards": {
         "expected_total_cards": 4.4,
         "expected_cards_a": 2.2,
         "expected_cards_b": 2.2,
         "most_likely_total": 4,
-        "prob_over_4_5_total": 0.45105,
+        "prob_over_4_5_total": 0.44935,
         "referee_strictness_vs_avg": 1.0
       },
       "referee": null,
@@ -34,19 +34,6 @@
       ]
     }
   ],
-  "third_place": {
-    "team_a": "France",
-    "team_b": "England",
-    "most_likely_score": "1-1",
-    "prob_win_a": 0.30605,
-    "prob_draw": 0.2277,
-    "prob_win_b": 0.46625,
-    "prob_advance_a": 0.39628382752816266,
-    "prob_advance_b": 0.6037161724718374,
-    "corners": null,
-    "cards": null,
-    "referee": null,
-    "warnings": []
-  },
+  "third_place": null,
   "champions": []
 }
