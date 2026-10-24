@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-24T14:57:00.717552+00:00",
+  "generated_at": "2026-10-24T15:21:38.331519+00:00",
   "round_name": "Cuartos de Final",
   "matches": [
     {
       "team_a": "France",
       "team_b": "Morocco",
       "most_likely_score": "1-1",
-      "prob_win_a": 0.3432,
-      "prob_draw": 0.2755,
-      "prob_win_b": 0.3813,
-      "prob_advance_a": 0.47370600414078673,
-      "prob_advance_b": 0.5262939958592132,
+      "prob_win_a": 0.3472,
+      "prob_draw": 0.2709,
+      "prob_win_b": 0.3819,
+      "prob_advance_a": 0.47620353860924425,
+      "prob_advance_b": 0.5237964613907558,
       "corners": {
         "expected_corners_a": 5.0,
         "expected_corners_b": 5.0,
         "most_likely_a": 5,
         "most_likely_b": 5,
-        "prob_over_9_5_total": 0.53995
+        "prob_over_9_5_total": 0.54255
       },
       "cards": {
         "expected_total_cards": 4.4,
         "expected_cards_a": 2.2,
         "expected_cards_b": 2.2,
         "most_likely_total": 4,
-        "prob_over_4_5_total": 0.4542,
+        "prob_over_4_5_total": 0.44645,
         "referee_strictness_vs_avg": 1.0
       },
       "referee": null,
@@ -37,24 +37,24 @@
       "team_a": "Spain",
       "team_b": "Belgium",
       "most_likely_score": "2-0",
-      "prob_win_a": 0.7274,
-      "prob_draw": 0.1534,
-      "prob_win_b": 0.1192,
-      "prob_advance_a": 0.8592015119300733,
-      "prob_advance_b": 0.14079848806992667,
+      "prob_win_a": 0.7313,
+      "prob_draw": 0.15185,
+      "prob_win_b": 0.11685,
+      "prob_advance_a": 0.8622295584507458,
+      "prob_advance_b": 0.13777044154925422,
       "corners": {
         "expected_corners_a": 5.0,
         "expected_corners_b": 5.0,
         "most_likely_a": 5,
         "most_likely_b": 5,
-        "prob_over_9_5_total": 0.54535
+        "prob_over_9_5_total": 0.54405
       },
       "cards": {
         "expected_total_cards": 4.4,
         "expected_cards_a": 2.2,
         "expected_cards_b": 2.2,
         "most_likely_total": 4,
-        "prob_over_4_5_total": 0.44685,
+        "prob_over_4_5_total": 0.4473,
         "referee_strictness_vs_avg": 1.0
       },
       "referee": null,
@@ -68,24 +68,24 @@
       "team_a": "Norway",
       "team_b": "England",
       "most_likely_score": "1-2",
-      "prob_win_a": 0.14575,
-      "prob_draw": 0.1717,
-      "prob_win_b": 0.68255,
-      "prob_advance_a": 0.1759628154050465,
-      "prob_advance_b": 0.8240371845949535,
+      "prob_win_a": 0.1481,
+      "prob_draw": 0.16545,
+      "prob_win_b": 0.68645,
+      "prob_advance_a": 0.17746090707566953,
+      "prob_advance_b": 0.8225390929243305,
       "corners": {
         "expected_corners_a": 5.0,
         "expected_corners_b": 5.0,
         "most_likely_a": 5,
         "most_likely_b": 5,
-        "prob_over_9_5_total": 0.5385
+        "prob_over_9_5_total": 0.54635
       },
       "cards": {
         "expected_total_cards": 4.4,
         "expected_cards_a": 2.2,
         "expected_cards_b": 2.2,
         "most_likely_total": 4,
-        "prob_over_4_5_total": 0.4454,
+        "prob_over_4_5_total": 0.4488,
         "referee_strictness_vs_avg": 1.0
       },
       "referee": null,
@@ -99,24 +99,24 @@
       "team_a": "Argentina",
       "team_b": "Switzerland",
       "most_likely_score": "2-0",
-      "prob_win_a": 0.73725,
-      "prob_draw": 0.1542,
-      "prob_win_b": 0.10855,
-      "prob_advance_a": 0.871659966895247,
-      "prob_advance_b": 0.12834003310475295,
+      "prob_win_a": 0.73555,
+      "prob_draw": 0.15735,
+      "prob_win_b": 0.1071,
+      "prob_advance_a": 0.872900967186851,
+      "prob_advance_b": 0.12709903281314905,
       "corners": {
         "expected_corners_a": 5.0,
         "expected_corners_b": 5.0,
         "most_likely_a": 5,
         "most_likely_b": 5,
-        "prob_over_9_5_total": 0.546
+        "prob_over_9_5_total": 0.54585
       },
       "cards": {
         "expected_total_cards": 4.4,
         "expected_cards_a": 2.2,
         "expected_cards_b": 2.2,
         "most_likely_total": 4,
-        "prob_over_4_5_total": 0.44665,
+        "prob_over_4_5_total": 0.4467,
         "referee_strictness_vs_avg": 1.0
       },
       "referee": "João Pinheiro",
@@ -131,51 +131,51 @@
   "champions": [
     {
       "team": "Spain",
-      "prob_champion": 0.3509,
-      "prob_reach_semifinal": 0.8629,
-      "prob_reach_final": 0.5481
+      "prob_champion": 0.3663,
+      "prob_reach_semifinal": 0.8848,
+      "prob_reach_final": 0.5635
     },
     {
       "team": "England",
-      "prob_champion": 0.2671,
-      "prob_reach_semifinal": 0.8365,
-      "prob_reach_final": 0.5344
+      "prob_champion": 0.2617,
+      "prob_reach_semifinal": 0.8198,
+      "prob_reach_final": 0.5442
     },
     {
       "team": "Argentina",
-      "prob_champion": 0.1828,
-      "prob_reach_semifinal": 0.8833,
-      "prob_reach_final": 0.4087
+      "prob_champion": 0.1676,
+      "prob_reach_semifinal": 0.8736,
+      "prob_reach_final": 0.3899
     },
     {
       "team": "Morocco",
-      "prob_champion": 0.1098,
-      "prob_reach_semifinal": 0.51,
-      "prob_reach_final": 0.2357
+      "prob_champion": 0.1166,
+      "prob_reach_semifinal": 0.5373,
+      "prob_reach_final": 0.2389
     },
     {
       "team": "France",
-      "prob_champion": 0.0699,
-      "prob_reach_semifinal": 0.49,
-      "prob_reach_final": 0.1728
+      "prob_champion": 0.0701,
+      "prob_reach_semifinal": 0.4627,
+      "prob_reach_final": 0.1656
     },
     {
       "team": "Belgium",
-      "prob_champion": 0.0108,
-      "prob_reach_semifinal": 0.1371,
-      "prob_reach_final": 0.0434
+      "prob_champion": 0.0085,
+      "prob_reach_semifinal": 0.1152,
+      "prob_reach_final": 0.032
     },
     {
       "team": "Norway",
-      "prob_champion": 0.0071,
-      "prob_reach_semifinal": 0.1635,
-      "prob_reach_final": 0.041
+      "prob_champion": 0.0082,
+      "prob_reach_semifinal": 0.1802,
+      "prob_reach_final": 0.0497
     },
     {
       "team": "Switzerland",
-      "prob_champion": 0.0016,
-      "prob_reach_semifinal": 0.1167,
-      "prob_reach_final": 0.0159
+      "prob_champion": 0.001,
+      "prob_reach_semifinal": 0.1264,
+      "prob_reach_final": 0.0162
     }
   ]
 }
